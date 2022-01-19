@@ -14,6 +14,7 @@ import fr.greta91.coursSpring.temp.LocalDB;
 public class ProduitServiceImpl implements ProduitService{
 	@Autowired
 	private LocalDB db;
+	
 	@Override
 	public List<Produit> findAll() {
 		return db.getProduits();

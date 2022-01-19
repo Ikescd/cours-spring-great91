@@ -20,7 +20,6 @@ import fr.greta91.coursSpring.temp.LocalDB;
 public class UtilisateurServiceImpl implements UtilisateurService, UserDetailsService{
 	@Autowired
 	private LocalDB db;
-
 	
 	@Override
 	public Optional<Utilisateur> findByUsername(String user) {
